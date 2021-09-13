@@ -7,6 +7,14 @@ public class Demo08 {
      * -XX:ThreadStackSize=1m
      * -XX:SurvivorRatio=2 -XX:MaxTenuringThreshold=15 -XX:PretenureSizeThreshold=20971520 -XX:+UseParNewGC
      * -XX:+UseConcMarkSweepGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:gc.log -jar jvm-1.0-SNAPSHOT.jar
+     *
+     * -XX:ThreadStackSize=1M
+     * -XX:+PrintGCDetails
+     * -XLoggc:gc.log
+     * -XX:+HeapDumpOnOutOfMemoryError
+     * -XX:HeapDumpPath=./
+     * -XX:+UseParNewGC
+     * -XX:+UseConcMarkSweepGC
      * @param args
      */
     public static long counter = 0;
